@@ -12,11 +12,11 @@ import string
 
 def is_pangram(s)->bool:
     sm = s.lower()
-    # Alphabet range in Python
+    # Alphabet range
     # https://stackoverflow.com/questions/16060899/alphabet-range-in-python
     sl = string.ascii_lowercase
     res = True
-    # Перебор по всему Alphabet range in Python
+    # Перебор по всему Alphabet range
     for sl2 in sl:
         res2 = False
         # Перебор по всем элементам введенной строки
