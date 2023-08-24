@@ -15,6 +15,9 @@ https://www.codewars.com/kata/51ba717bb08c1cd60f00002f/train/python
 
 Примечание: список уже отсортированный
 '''
+
+# Потому что после вставки списка в в список
+# новые операции с ним изменяют вставленный список
 from copy import deepcopy
 
 def solution(lst:list)->str:
@@ -55,6 +58,7 @@ def solution(lst:list)->str:
                     res_str = res_str + str(lstitem[i]) + ','
             else:
                 res_str = res_str +str(lstitem[0])+'-'+str(lstitem[llen-1])+','
+    # удаление конечной запятой
     nl = len(res_str)-1
     if res_str[nl]==',':
         res_str = res_str[:nl]
