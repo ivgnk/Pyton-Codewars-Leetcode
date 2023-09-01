@@ -7,7 +7,7 @@
 def count_sheeps(sheep):
     i=0
     for j in sheep:
-        i += int(j)
+        i += int(bool(j))
     return i
 
 def thetest_count_sheeps():
