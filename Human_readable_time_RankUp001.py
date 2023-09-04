@@ -20,7 +20,7 @@ def make_readable(seconds):
     tr_sec = seconds % 60
     tr_min = seconds // 60
     tr_hr = tr_min // 60
-    if tr_min>60 : tr_min = tr_min % 60
+    if tr_min>=60 : tr_min = tr_min % 60
     s = str(tr_hr).zfill(2)+':'+str(tr_min).zfill(2)+':'+str(tr_sec).zfill(2)
     return s
 
