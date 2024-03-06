@@ -6,8 +6,7 @@ def findMedianSortedArrays(nums1, nums2):
     :type nums2: List[int]
     :rtype: float
     """
-    n = nums1+nums2
-    a = np.array(n)
+    a = np.array(nums1+nums2)
     return np.median(a)
 
 print(findMedianSortedArrays([1,3],[2]))
