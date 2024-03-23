@@ -1,4 +1,4 @@
-# Leetcode ащк Знерщт
+# Leetcode for Python
 
 in March 2023 
 Files with names starting with _ are 
