@@ -19,6 +19,11 @@ Output: false
 Explanation: s becomes "c" while t becomes "b".
 '''
 
+# Runtime 12 ms
+# Beats # 78.56% of users with Python
+# Memory 11.72MB
+# Beats 23.49% of users with Python
+
 
 def backspaceCompare(s, t):
     """
