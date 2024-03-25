@@ -1,3 +1,7 @@
+Time Limit Exceeded
+1984. Minimum Difference Between Highest and Lowest of K Scores -- 15 / 118 testcases passed
+
+
 
 easy
 2665. Counter II 
