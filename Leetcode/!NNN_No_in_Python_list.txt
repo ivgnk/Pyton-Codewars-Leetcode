@@ -1,3 +1,6 @@
+Only Bash
+193. Valid Phone Numbers
+
 Wrong Answer in Leetcode
 2809. Minimum Time to Make Array Sum At Most x -- in 513 / 1274 testcase
 
