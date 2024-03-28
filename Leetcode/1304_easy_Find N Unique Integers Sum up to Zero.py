@@ -1,0 +1,36 @@
+'''
+1304. Find N Unique Integers Sum up to Zero
+https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/description/
+
+Given an integer n, return any array containing n unique integers such that they add up to 0.
+Example 1:
+Input: n = 5
+Output: [-7,-1,1,3,4]
+Explanation: These arrays also are accepted [-5,-1,1,2,3] , [-3,-1,2,-2,4].
+
+Example 2:
+Input: n = 3
+Output: [-1,0,1]
+
+Example 3:
+Input: n = 1
+Output: [0]
+'''
+
+# Runtime 15 ms Beats 68.40% of users with Python
+# Memory 11.74 MB Beats 40.69% of users with Python
+
+def sumZero(n):
+    """
+    :type n: int
+    :rtype: List[int]
+    """
+    if n==1: return [0]
+    res=[]
+    for i in range(n//2):
+        res.append(i+1)
+        res.append(-(i+1))
+    if n%2==1: res.append(0)
+    return res
+
+print(sumZero(5))
