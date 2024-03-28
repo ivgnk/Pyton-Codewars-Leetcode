@@ -7,6 +7,7 @@ Wrong Answer in Leetcode
 Time Limit Exceeded
 0121. Best Time to Buy and Sell Stock -- 200 / 212 testcases passed
 0643. Maximum Average Subarray I --  124 / 127 testcases passed - if only Python facilities
+1299. Replace Elements with Greatest Element on Right Side -- 87 / 90 testcases passed
 1984. Minimum Difference Between Highest and Lowest of K Scores -- 15 / 118 testcases passed
 
 
