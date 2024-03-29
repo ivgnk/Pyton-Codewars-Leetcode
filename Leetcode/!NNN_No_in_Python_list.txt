@@ -11,6 +11,8 @@ Time Limit Exceeded
 1299. Replace Elements with Greatest Element on Right Side -- 87 / 90 testcases passed
 1984. Minimum Difference Between Highest and Lowest of K Scores -- 15 / 118 testcases passed
 
+Super long data
+1160. Find Words That Can Be Formed by Characters -- 10 / 36 testcases passed
 
 
 easy
