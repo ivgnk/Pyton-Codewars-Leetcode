@@ -12,6 +12,7 @@ Time Limit Exceeded
 0643. Maximum Average Subarray I --  124 / 127 testcases passed - if only Python facilities
 1128. Number of Equivalent Domino Pairs -- 18 / 19 testcases passed
 1299. Replace Elements with Greatest Element on Right Side -- 87 / 90 testcases passed
+1200. Minimum Absolute Difference --  33 / 38 testcases passed
 1984. Minimum Difference Between Highest and Lowest of K Scores -- 15 / 118 testcases passed
 
 Super long data
