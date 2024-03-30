@@ -1,4 +1,4 @@
-##Signs of older Python versions in Leetcode##
+Signs of older Python versions in Leetcode
 1185. Day of the Week - do not work match-case - Python 3.10 (2021)
 
 Only Bash
