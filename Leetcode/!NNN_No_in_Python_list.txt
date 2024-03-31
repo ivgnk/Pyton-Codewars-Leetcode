@@ -1,25 +1,23 @@
-Signs of older Python versions in Leetcode
+Remarks
+
+1) The task is incorrectly formulated
+1221. Split a String in Balanced Strings 
+ In this formulation, you can get a larger number of substrings. In order for the examples to be executed correctly, you need to add: "in the left and right parts of the line (the same number of kids)"
+
+2) Signs of older Python versions in Leetcode
 1185. Day of the Week - do not work match-case - Python 3.10 (2021)
 
-Only Bash
+3) Only Bash
 193. Valid Phone Numbers
 
-Wrong Answer in Leetcode
+4) Wrong Answer in Leetcode
 2809. Minimum Time to Make Array Sum At Most x -- in 513 / 1274 testcase
 
-Time Limit Exceeded
+5) Time Limit Exceeded (Super long data)
 0121. Best Time to Buy and Sell Stock -- 200 / 212 testcases passed
 0643. Maximum Average Subarray I --  124 / 127 testcases passed - if only Python facilities
 1128. Number of Equivalent Domino Pairs -- 18 / 19 testcases passed
+1160. Find Words That Can Be Formed by Characters -- 10 / 36 testcases passed
 1299. Replace Elements with Greatest Element on Right Side -- 87 / 90 testcases passed
 1200. Minimum Absolute Difference --  33 / 38 testcases passed
 1984. Minimum Difference Between Highest and Lowest of K Scores -- 15 / 118 testcases passed
-
-Super long data
-1160. Find Words That Can Be Formed by Characters -- 10 / 36 testcases passed
-
-
-easy
-2665. Counter II 
-2715. Timeout Cancellation
-2666. Allow One Function Call
