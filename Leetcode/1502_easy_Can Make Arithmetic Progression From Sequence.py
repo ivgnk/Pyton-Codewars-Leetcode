@@ -11,6 +11,9 @@ Otherwise, return false.
 # Runtime 17 ms Beats 83.49% of users with Python
 # Memory 11.90 MB Beats 13.65% of users with Python
 
+# Advanced - Trie, Monotonic Stack
+# Fundamental - Array, Sorting
+
 def canMakeArithmeticProgression(arr):
     """
     :type arr: List[int]
