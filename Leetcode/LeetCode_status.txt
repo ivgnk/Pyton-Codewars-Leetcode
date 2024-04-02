@@ -1,0 +1,28 @@
+03.04.2024 - 100 Pronlems
+Easy 90/785 Beats 89.3% 
+Medium 7/1628 Beats 32.1%
+Hard 3/690 Beats 33.2%
+
+Skills
+Advanced
+Dynamic Programming x2
+Divide and Conquer x2
+Backtracking x1
+
+Intermediate
+Math x31
+Hash Table x22
+Bit Manipulation x10
+Binary Search x7
+Recursion x4
+Greedy x2
+Sliding Window x2
+
+Fundamental
+Array x56
+String x25
+Sorting x19
+Simulation x11
+Two Pointers x9
+Matrix x4
+Stack x3
