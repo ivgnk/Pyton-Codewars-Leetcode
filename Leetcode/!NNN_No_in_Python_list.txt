@@ -8,9 +8,12 @@ Remarks
 
 3) Only Bash
 193. Valid Phone Numbers
+195. Tenth Line
 
 4) Wrong Answer in Leetcode
-1437. Check If All 1's Are at Least Length K Places Away -- 66 / 68 testcases passed  //  Bad test: nums = [0,1,1,0,0,0,0,0,0,1,1], k = 5
+1437. Check If All 1's Are at Least Length K Places Away -- 66 / 68 testcases passed  
+//  Bad test: nums = [0,1,1,0,0,0,0,0,0,1,1], k = 5
+
 2809. Minimum Time to Make Array Sum At Most x -- in 513 / 1274 testcase
 
 5) Time Limit Exceeded (Super long data)
