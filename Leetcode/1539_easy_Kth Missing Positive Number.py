@@ -17,7 +17,7 @@ Explanation: The missing positive integers are [5,6,7,...]. The 2nd missing posi
 '''
 
 
-def findKthPositive(arr, k):
+def findKthPositive2(arr, k):
     """
     :type arr: List[int]
     :type k: int
@@ -30,6 +30,17 @@ def findKthPositive(arr, k):
             if l==k: break
         n += 1
     return n
+
+
+def findKthPositive(arr, k):
+    l = 0
+    for i in range(1,len(arr)+k+2):
+        if i not in arr:
+            l+=1
+            print(i,l)
+            if l==k: break
+    return i
+
 
 
 # print(findKthPositive(arr = [2,3,4,7,11], k = 5))
