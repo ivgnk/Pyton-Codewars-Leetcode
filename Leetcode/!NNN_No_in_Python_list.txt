@@ -18,6 +18,7 @@ In order for the examples to be executed correctly, you need to add: "in the lef
 2809. Minimum Time to Make Array Sum At Most x -- in 513 / 1274 testcase
 
 5) Time Limit Exceeded (Super long data)
+0018. 4Sum -- 265 / 294 testcases passed
 0121. Best Time to Buy and Sell Stock -- 200 / 212 testcases passed
 0219. Contains Duplicate II -- 20 / 58 testcases passed
 0278. First Bad Version -- 11 / 24 testcases passed --- It is necessary, apparently, to search by the method of dichotomy
