@@ -32,8 +32,8 @@ Output: false
 Explanation: The numbers in s are: 7, 51, 50, 60. They are not strictly increasing.
 '''
 
-# Runtime 15 ms Beats 48.33% of users with Python
-# Memory 11.90 MB Beats 11.67% of users with Python
+# Runtime 10 ms Beats 84.17% of users with Python
+# Memory 11.70 MB Beats 76.67% of users with Python
 
 def areNumbersAscending(s):
     """
