@@ -37,6 +37,10 @@ The segment of 1s is not longer, so return false.
 # 10 ms Beats 92.65% of users with Python
 # Memory 11.75 MB Beats 16.18% of users with Python
 
+# More challenges
+# 2031. Count Subarrays With More Ones Than Zeros
+# 1784. Check if Binary String Has at Most One Segment of Ones
+
 def checkZeroOnes(s):
     """
     :type s: str
