@@ -18,6 +18,11 @@ Explanation: The smallest multiple of both 6 and 2 is 6. Note that a number is a
 # Runtime 8 ms Beats 88.95% of users with Python
 # Memory 11.65 MB Beats 37.42% of users with Python
 
+# Similar -  More challenges
+# 1071. Greatest Common Divisor of Strings
+# 1952. Three Divisors
+# 1979. Find Greatest Common Divisor of Array
+
 def smallestEvenMultiple(n):
     """
     :type n: int
