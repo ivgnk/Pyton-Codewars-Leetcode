@@ -33,6 +33,11 @@ Hence, we return 3.
 # 25 ms Beats 74.58% of users with Python
 # Memory 11.56 MB Beats 75.83% of users with Python
 
+# More challenges
+# 1566 easy Detect Pattern of Length M Repeated K or More Times
+# 1260 easy Shift 2D Grid
+# 775 medium Global and Local Inversions
+
 from icecream import ic
 def longestMonotonicSubarray(nums):
     """
