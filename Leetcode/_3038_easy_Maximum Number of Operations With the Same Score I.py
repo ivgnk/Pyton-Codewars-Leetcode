@@ -8,8 +8,6 @@ The score of the operation is the sum of the deleted elements.
 Your task is to find the maximum number of operations that can be performed, such that all operations have the same score.
 Return the maximum number of operations possible that satisfy the condition mentioned above.
 
-
-
 Example 1:
 Input: nums = [3,2,1,4,5]
 Output: 2
@@ -25,6 +23,8 @@ Explanation: We perform the following operations:
 - Delete the first two elements, with score 3 + 2 = 5, nums = [6,1,4].
 We are unable to perform any more operations as the score of the next operation isn't the same as the previous one.
 """
+
+# Wrong Answer -- 506 / 557 testcases passed
 
 from collections import Counter
 def maxOperations(nums):
