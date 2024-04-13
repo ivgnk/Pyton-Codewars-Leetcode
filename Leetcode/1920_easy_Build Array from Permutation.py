@@ -7,8 +7,8 @@ ans[i] = nums[nums[i]] for each 0 <= i < nums.length and return it.
 A zero-based permutation nums is an array of distinct integers from 0 to nums.length - 1 (inclusive).
 """
 
-# Runtime 82 ms Beats 62.86% of users with Python
-# Memory 11.79 MB Beats 91.75% of users with Python
+# 73 ms Beats 96.72% of users with Python
+# Memory 11.96 MB Beats 32.71% of users with Python
 
 def buildArray(nums):
     """
