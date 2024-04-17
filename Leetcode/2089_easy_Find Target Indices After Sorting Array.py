@@ -26,8 +26,8 @@ Explanation: After sorting, nums is [1,2,2,3,5].
 The index where nums[i] == 5 is 4.
 """
 
-# 30 ms Beats 39.22% of users with Python
-# Memory 11.53 MB Beats 78.41% of users with Python
+# 26 ms Beats 69.56% of users with Python
+# Memory 11.61 MB Beats 41.70% of users with Python
 
 def targetIndices(nums, target):
     """
