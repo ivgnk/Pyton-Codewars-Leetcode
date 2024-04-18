@@ -22,8 +22,8 @@ Input: word1  = ["abc", "d", "defg"], word2 = ["abcddefg"]
 Output: true
 """
 
-# Runtime 14 ms Beats 69.98% of users with Python
-# Memory 11.96 MB Beats 23.18% of users with Python
+# Runtime 13 ms Beats 74.69% of users with Python
+# Memory 11.62 MB Beats 85.28% of users with Python
 
 def arrayStringsAreEqual(word1, word2):
     """
