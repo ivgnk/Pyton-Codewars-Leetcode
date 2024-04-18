@@ -32,6 +32,7 @@ In order for the examples to be executed correctly, you need to add: "in the lef
 1664. Ways to Make a Fair Array -- 56 / 105 testcases passed
 1984. Minimum Difference Between Highest and Lowest of K Scores -- 15 / 118 testcases passed
 2001. Number of Pairs of Interchangeable Rectangles -- 41 / 46 testcases passed
+2563. Count the Number of Fair Pairs -- 48 / 53 testcases passed - 100000 points
 
 6) Memory Limit Exceeded
 1640. Check Array Formation Through Concatenation -- 21 / 85 testcases passed
