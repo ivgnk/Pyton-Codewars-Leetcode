@@ -1,5 +1,4 @@
 """
-0 Code Testcase Test Result Test Result
 137. Single Number II
 https://leetcode.com/problems/single-number-ii/description/
 
@@ -10,21 +9,21 @@ You must implement a solution with a linear runtime complexity and use only cons
 
 from collections import Counter
 from icecream import ic
-def singleNumber2(nums):
-    """
-    :type nums: List[int]
-    :rtype: int
-    """
-    nc = 0
-    while nc != 1:
-        nnn = nums[0]
-        nc = nums.count(nnn)
-        ic(nums,nc)
-        if nc == 1:
-            return nnn
-        else:
-            nums =  [value for value in nums if value != nnn]
-    return nums[0]
+# def singleNumber2(nums):
+#     """
+#     :type nums: List[int]
+#     :rtype: int
+#     """
+#     nc = 0
+#     while nc != 1:
+#         nnn = nums[0]
+#         nc = nums.count(nnn)
+#         ic(nums,nc)
+#         if nc == 1:
+#             return nnn
+#         else:
+#             nums =  [value for value in nums if value != nnn]
+#     return nums[0]
 
 # Runtime 56 ms Beats 66.44% of users with Python3
 # Memory 18.68 MB Beats 57.57% of users with Python3
