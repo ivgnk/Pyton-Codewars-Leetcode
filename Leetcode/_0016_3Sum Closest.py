@@ -21,7 +21,7 @@ Explanation: The sum that is closest to the target is 0. (0 + 0 + 0 = 0)
 # Time Limit Exceeded -- 46 / 102 testcases passed
 
 from itertools import permutations, combinations
-def threeSumClosest(nums, target):
+def threeSumClosest2(nums, target):
     """
     :type nums: List[int]
     :type target: int
@@ -39,5 +39,16 @@ def threeSumClosest(nums, target):
         # print(i, perm[i], s,r1,mmin)
     return mmin
 
+def threeSumClosest(nums, target):
+    lst=[]
+    n=1
+    while n<=3:
+        print(n,nums)
+        mmin=min(nums, key=lambda x: abs(x - target))
+        lst.append(mmin)
+        nums.remove(mmin)
+        print(n,nums,lst,mmin)
+        n=n+1
+    return sum(lst)
 
-print(threeSumClosest(nums = [-1,2,1,-4], target = 1))
+print(threeSumClosest(nums = [4,0,5,-5,3,3,0,-4,-5], target = -2))
