@@ -15,6 +15,7 @@ In order for the examples to be executed correctly, you need to add: "in the lef
 1437. Check If All 1's Are at Least Length K Places Away -- 66 / 68 testcases passed //  Bad test: nums = [0,1,1,0,0,0,0,0,0,1,1], k = 5
 1528. Shuffle String - Even 1 test case is incorrect
 3038. Maximum Number of Operations With the Same Score I -- 506 / 557 testcases passed
+3121. Count the Number of Special Characters II -- 736 / 896 testcases passed
 
 2809. Minimum Time to Make Array Sum At Most x -- in 513 / 1274 testcase
 
