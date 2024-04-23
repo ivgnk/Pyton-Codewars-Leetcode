@@ -19,8 +19,8 @@ Input: nums = [7,7,7,7]
 Output: [0,0,0,0]
 """
 
-# Runtime 167 ms Beats 56.29% of users with Python
-# Memory 11.62 MB Beats 72.00% of users with Python
+# Runtime 166 ms Beats 56.47% of users with Python
+# Memory 11.60 MB Beats 92.79% of users with Python
 
 def smallerNumbersThanCurrent(nums):
     """
