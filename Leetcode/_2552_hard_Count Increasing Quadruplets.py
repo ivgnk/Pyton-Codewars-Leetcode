@@ -36,7 +36,7 @@ def countQuadruplets(nums):
                 for k in range(j + 1, ll):
                     if nums[i] < nums[k] < nums[j]:
                         for l in range(k + 1, ll):
-                            if nums[i] < nums[k] < nums[j] < nums[l]: n = n + 1
+                            if nums[j] < nums[l]: n = n + 1
     return n
 
 
