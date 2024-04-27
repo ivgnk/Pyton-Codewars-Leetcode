@@ -1,4 +1,6 @@
 """
+Done 27.04.2024
+
 2869. Minimum Operations to Collect Elements
 https://leetcode.com/problems/minimum-operations-to-collect-elements/description/
 
@@ -43,8 +45,8 @@ def minOperations(nums, k):
     return n
 
 def minOperations2(nums, k):
-    # Runtime 24 ms Beats 32.69% of users with Python
-    # Memory 11.64 MB Beats 44.23% of users with Python
+    # Runtime 18 ms Beats 80.77% of users with Python
+    # Memory 11.67 MB Beats 44.23% of users with Python
     res = set();    rr = range(1, k + 1)
     n = 0;    ind = 1
     while len(res) != k:
