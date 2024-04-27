@@ -20,23 +20,18 @@ def commonChars(words):
     :type words: List[str]
     :rtype: List[str]
     """
-    tdict=[]
-    for w in words:
-        dd=dict(Counter(w))
-        tdict.append(dd)
-    # print(tdict)
-    ltdict=len(tdict)
+    tdict = [dict(Counter(w)) for w in words]
+    ltdict = len(tdict)
     res = []
     for k, v in tdict[0].items():
-        lk=[k in tdict[i].keys() for i in range(1,ltdict)]
-        # print(k,lk)
+        # lk=[k in tdict[i].keys() for i in range(1,ltdict)]
+        lk = [k in t.keys() for t in tdict]
         if all(lk):
-            # print('  ',k,lk,'all')
-            lk2 = [tdict[i][k] for i in range(ltdict)]
-            # print('--',k,lk2)
+            lk2 = [t[k] for t in tdict]
             for j in range(min(lk2)):
-                 res.append(k)
+                res.append(k)
     return res
+
 
 print(commonChars(words = ["bella","label","roller"]))
 # print('5' in ['25','23','105'])
