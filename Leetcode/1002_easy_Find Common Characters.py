@@ -13,6 +13,8 @@ Example 2:
 Input: words = ["cool","lock","cook"]
 Output: ["c","o"]
 """
+# Runtime 47 ms Beats 27.07% of users with Python
+# Memory 12.00 MB Beats 36.09% of users with Python
 
 from collections import Counter
 def commonChars(words):
@@ -21,7 +23,7 @@ def commonChars(words):
     :rtype: List[str]
     """
     tdict = [dict(Counter(w)) for w in words]
-    ltdict = len(tdict)
+    # ltdict = len(tdict)
     res = []
     for k, v in tdict[0].items():
         # lk=[k in tdict[i].keys() for i in range(1,ltdict)]
