@@ -39,5 +39,6 @@ In order for the examples to be executed correctly, you need to add: "in the lef
 2563. Count the Number of Fair Pairs -- 49 / 53 testcases passed - 100000 points
 
 6) Memory Limit Exceeded
+0686. Repeated String Match -- 57 / 59 testcases passed
 0233. Number of Digit One -- 35 / 38 testcases passed
 1640. Check Array Formation Through Concatenation -- 21 / 85 testcases passed
