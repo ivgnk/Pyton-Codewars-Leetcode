@@ -41,7 +41,8 @@ Therefore, we return [[1,7],[2,4],[7,1]].
 
 # Runtime 86 ms Beats 62.89% of users with Python
 # Memory 12.21 MB Beats 85.57% of users with Python
-
+# Runtime 84 ms Beats 69.07% of users with Python
+# Memory 12.36 MB Beats 60.82% of users with Python
 
 def mergeSimilarItems(items1, items2):
     """
