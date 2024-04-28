@@ -35,6 +35,7 @@ In order for the examples to be executed correctly, you need to add: "in the lef
 1664. Ways to Make a Fair Array -- 56 / 105 testcases passed
 1984. Minimum Difference Between Highest and Lowest of K Scores -- 15 / 118 testcases passed
 2001. Number of Pairs of Interchangeable Rectangles -- 41 / 46 testcases passed
+2007. Find Original Array From Doubled Array -- 175 / 179 testcases passed
 2552. Count Increasing Quadruplets -- 66 / 121 testcases passed
 2563. Count the Number of Fair Pairs -- 49 / 53 testcases passed - 100000 points
 
