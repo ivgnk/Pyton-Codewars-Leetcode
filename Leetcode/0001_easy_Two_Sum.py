@@ -53,4 +53,31 @@ def twoSum2(nums, target):
                 res.append(i);  res.append(j)
                 return res
 
-print(twoSum2(nums = [2,7,11,15], target = 9))
+# Runtime 33 ms Beats 91.15% of users with Python
+# Memory 12.51 MB Beats 49.61% of users with Python
+def twoSum3(nums, target):
+    seen={}
+    for i in range(len(nums)):
+        diff = target - nums[i]
+        if diff in seen:
+            print(seen)
+            return [seen[diff],i]
+        else:
+            seen[nums[i]] = i
+
+# Runtime 43 ms Beats 62.81% of users with Python
+# Memory 13.20 MB Beats 6.77% of users with Python
+# Runtime 35 ms Beats 86.31% of users with Python
+# Memory 13.05 MB Beats 6.77% of users with Python
+def twoSum4(nums, target):
+    ll=len(nums)
+    n2=sorted([[nums[i],i] for i in range(ll)])
+    i=0;j=ll-1
+    while i<j:
+       if n2[i][0]+n2[j][0]==target: return [n2[i][1],n2[j][1]]
+       elif n2[i][0]+n2[j][0]>target: j=j-1
+       else: i=i+1
+
+
+# print(twoSum3(nums = [2,7,11,15], target = 9))
+print(twoSum4(nums = [2,7,11,15], target = 9))
