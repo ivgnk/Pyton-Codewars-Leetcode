@@ -1,4 +1,5 @@
 '''
+Re-solution 04.05.2024
 162. Find Peak Element
 https://leetcode.com/problems/find-peak-element/description/
 
@@ -23,12 +24,20 @@ Output: 5
 Explanation: Your function can return either index number 1 where the peak element is 2, or index number 5 where the peak element is 6.
 '''
 
+# Runtime 50 ms Beats 5.77% of users with Python
+# Memory 22.94 MB Beats 12.45% of users with Python
 import numpy as np
 
-def findPeakElement(nums):
+def findPeakElement2(nums):
     """
     :type nums: List[int]
     :rtype: int
     """
     a = np.array(nums)
     return np.argmax(a)
+
+# Runtime 18 ms Beats 96.66% of users with Python
+# Memory 11.80 MB Beats 74.64% of users with Python
+def findPeakElement(nums):
+    s=sorted(nums)
+    return s.index(s[len(s)-1])
