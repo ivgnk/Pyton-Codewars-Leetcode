@@ -40,4 +40,4 @@ def findPeakElement2(nums):
 # Memory 11.80 MB Beats 74.64% of users with Python
 def findPeakElement(nums):
     s=sorted(nums)
-    return s.index(s[len(s)-1])
+    return nums.index(s[len(s)-1])
