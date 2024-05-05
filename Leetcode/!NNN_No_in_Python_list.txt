@@ -1,6 +1,7 @@
 Remarks
 
 1) The task is incorrectly formulated
+0532. K-diff Pairs in an Array -- Bad Test case 1
 1221. Split a String in Balanced Strings -- In this formulation, you can get a larger number of substrings. 
 In order for the examples to be executed correctly, you need to add: "in the left and right parts of the line (the same number of kids)"
 
