@@ -26,7 +26,7 @@ Thus, grid is not an X-Matrix.
 
 import numpy as np
 from icecream import ic
-def checkXMatrix(grid):
+def checkXMatrix2(grid):
     """
     :type grid: List[List[int]]
     :rtype: bool
@@ -48,6 +48,31 @@ def checkXMatrix(grid):
     else:
         return nn+1 == count
 
+# Runtime 254 ms Beats 7.21% of users with Python
+# Memory 23.61 MB Beats 8.11% of users with Python
+# Runtime 234 ms Beats 7.21% of users with Python
+# Memory 23.70 MB Beats 8.11% of users with Python
+# Runtime 230 ms Beats 7.21% of users with Python
+# Memory 23.71 MB Beats 8.11% of users with Python
+def checkXMatrix3(grid):
+    ll=len(grid); r = range(ll); nn = ll - 1
+    for i in r:
+        for j in r:
+            if i==j or i == nn - j:
+                if grid[i][j]==0: return False
+            else:
+                if grid[i][j] != 0: return False
+    return True
+
+# def checkXMatrix(grid):
+#     ll=len(grid)
+#     gr = [num for row in grid for num in row]
+#     cnt=gr.count(0)
+#     nn = ll*ll-2*ll
+#     if ll%2==0:
+#         return nn==cnt
+#     else:
+#         return nn+1 == cnt
 
 
 print(checkXMatrix([[5,0,20],[0,5,0],[6,0,2]]))
