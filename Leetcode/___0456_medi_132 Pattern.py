@@ -1,6 +1,8 @@
 """
 Done 09.05.2024. Topics: Array, Binary Search, Stack, Monotonic Stack, Ordered Set
 
+Good solution in https://leetcode.ca/2017-02-28-456-132-Pattern/
+
 456. 132 Pattern
 https://leetcode.com/problems/132-pattern/description/
 
