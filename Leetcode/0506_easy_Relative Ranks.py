@@ -1,5 +1,5 @@
 '''
-Re-solution 09.05.2024. Topics: Array, Sorting, Heap (Priority Queue)
+09.05.2024. Array, Sorting, Heap (Priority Queue)
 506. Relative Ranks
 https://leetcode.com/problems/relative-ranks/description/
 
@@ -25,6 +25,7 @@ Input: score = [10,3,8,9,4]
 Output: ["Gold Medal","5","Bronze Medal","Silver Medal","4"]
 Explanation: The placements are [1st, 5th, 3rd, 2nd, 4th].
 '''
+import heapq
 
 
 # Runtime 246 ms Beats 26.73% of users with Python3
@@ -50,7 +51,7 @@ def findRelativeRanks2(score):
 
 # Runtime 246 ms Beats 26.73% of users with Python3
 # Memory 17.77 MB Beats 49.94% of users with Python3
-def findRelativeRanks(score):
+def findRelativeRanks3(score):
     """
     :type score: List[int]
     :rtype: List[str]
@@ -68,7 +69,7 @@ def findRelativeRanks(score):
 
 # Runtime 242 ms Beats 27.26% of users with Python3
 # Memory 17.74 MB Beats 49.94% of users with Python3
-def findRelativeRanks(score):
+def findRelativeRanks4(score):
     sc_sort = sorted(score, reverse=True)
     the_ind = [sc_sort.index(s) for s in score]
     res = []
@@ -78,6 +79,31 @@ def findRelativeRanks(score):
         elif i == 2:      res.append("Bronze Medal")
         else:  res.append(str(i + 1))
     return res
+
+# decision https://leetcode.com/problems/relative-ranks/description/comments/1726983 from https://leetcode.com/filemonc/
+# Runtime 59 ms Beats 85.65% of users with Python3
+# Memory 17.76 MB Beats 49.94% of users with Python3
+def findRelativeRanks(score):
+    scoreCopy = []
+    for item in score:
+        scoreCopy.append(item)
+
+    heapq.heapify(scoreCopy)
+    placing = {}
+    index = len(score)
+    while len(scoreCopy) > 0:
+        item = heapq.heappop(scoreCopy)
+        placing[item] = index
+        index -= 1
+
+    result = []
+    for index in range(len(score)):
+        match placing[score[index]]:
+            case 1: result.append("Gold Medal")
+            case 2: result.append("Silver Medal")
+            case 3: result.append("Bronze Medal")
+            case _: result.append(str(placing[score[index]]))
+    return result
 
 print(findRelativeRanks([5,4,3,2,1]))
 print(findRelativeRanks([10,3,8,9,4]))
