@@ -1,5 +1,8 @@
 Remarks
 
+0) Work only Python 3
+
+
 1) The task is incorrectly formulated
 0532. K-diff Pairs in an Array -- Bad Test case 1
 1221. Split a String in Balanced Strings -- In this formulation, you can get a larger number of substrings. 
