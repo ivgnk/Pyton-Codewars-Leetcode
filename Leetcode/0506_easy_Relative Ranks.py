@@ -109,3 +109,4 @@ print(findRelativeRanks([5,4,3,2,1]))
 print(findRelativeRanks([10,3,8,9,4]))
 
 # https://www.youtube.com/watch?v=75oJfSGwz7A
+# https://www.youtube.com/watch?v=0pjzvQPHinc
