@@ -28,6 +28,7 @@ In order for the examples to be executed correctly, you need to add: "in the lef
 0219. Contains Duplicate II -- 20 / 58 testcases passed
 0278. First Bad Version -- 11 / 24 testcases passed --- It is necessary, apparently, to search by the method of dichotomy
 0477. Total Hamming Distance -- 35 / 46 testcases passed
+0556. Next Greater Element III -- 39 / 39 testcases passed
 0643. Maximum Average Subarray I --  124 / 127 testcases passed - if only Python facilities
 680. Valid Palindrome II --  420 / 471 testcases passed
 1047. Remove All Adjacent Duplicates In String -- 104 / 106 testcases passed
