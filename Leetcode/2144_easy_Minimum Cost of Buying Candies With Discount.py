@@ -49,6 +49,9 @@ Can “sorting” the array help us find the minimum cost?
 # Runtime 23 ms Beats 80.00% of users with Python
 # Memory 11.61 MB Beats 37.50% of users with Python
 
+# Sorting from larger to smaller and summing the first two elements in each triple.
+# For the last three, we check the existence of these elements
+
 def minimumCost(cost):
     """
     :type cost: List[int]
