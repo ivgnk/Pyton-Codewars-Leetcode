@@ -1,4 +1,11 @@
-Remarks
+#Ready:
+##Linked List
+0148_medi_Sort List.py
+0876_easy_Middle of the Linked List.py
+2130_medi_Maximum Twin Sum of a Linked List.py
+2181_medi_Merge Nodes in Between Zeros.py
+
+#Remarks
 
 0) Work only Python 3
 
