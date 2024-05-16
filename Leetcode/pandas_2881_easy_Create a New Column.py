@@ -1,0 +1,58 @@
+"""
+Done 16.05.2024. Topics: Pandas
+2881. Create a New Column
+https://leetcode.com/problems/create-a-new-column/description/
+
+DataFrame employees
++-------------+--------+
+| Column Name | Type.  |
++-------------+--------+
+| name        | object |
+| salary      | int.   |
++-------------+--------+
+A company plans to provide its employees with a bonus.
+
+Write a solution to create a new column name bonus that contains the doubled values of the salary column.
+
+The result format is in the following example.
+
+Example 1:
+Input:
+DataFrame employees
++---------+--------+
+| name    | salary |
++---------+--------+
+| Piper   | 4548   |
+| Grace   | 28150  |
+| Georgia | 1103   |
+| Willow  | 6593   |
+| Finn    | 74576  |
+| Thomas  | 24433  |
++---------+--------+
+Output:
++---------+--------+--------+
+| name    | salary | bonus  |
++---------+--------+--------+
+| Piper   | 4548   | 9096   |
+| Grace   | 28150  | 56300  |
+| Georgia | 1103   | 2206   |
+| Willow  | 6593   | 13186  |
+| Finn    | 74576  | 149152 |
+| Thomas  | 24433  | 48866  |
++---------+--------+--------+
+Explanation:
+A new column bonus is created by doubling the value in the column salary.
+
+Hint 1
+Consider using the `[]` brackets with the new column name at the left side of the assignment.
+The calculation of the value is done element-wise.
+"""
+
+# Runtime 567 ms Beats 71.92% of users with Pandas
+# Memory 65.24 MB Beats 52.48% of users with Pandas
+
+import pandas as pd
+
+def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
+    employees['bonus']=employees['salary']*2
+    return employees
