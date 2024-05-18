@@ -18,6 +18,11 @@ Example 2:
 Input: words = ["notapalindrome","racecar"]
 Output: "racecar"
 Explanation: The first and only string that is palindromic is "racecar".
+
+Hint 1
+Iterate through the elements in order. As soon as the current element is a palindrome, return it.
+Hint 2
+To check if an element is a palindrome, can you reverse the string?
 """
 
 # Runtime 49 ms Beats 71.71% of users with Python
