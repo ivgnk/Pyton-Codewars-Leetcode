@@ -22,10 +22,7 @@ Return the result table in any order.
 
 The result format is shown in the following example.
 
-
-
 Example 1:
-
 Input:
 Teacher table:
 +------------+------------+---------+
@@ -62,7 +59,7 @@ import pandas as pd
 # Runtime 852 ms Beats 5.24% of users with Pandas
 # Memory 66.96 MB Beats 55.09% of users with Pandas
 
-def count_unique_subjects2(teacher: pd.DataFrame) -> pd.DataFrame:
+def count_unique_subjects3(teacher: pd.DataFrame) -> pd.DataFrame:
     teach= pd.DataFrame(columns=['teacher_id','cnt'])
     # https://pythonru.com/primery/pandas-value-counts
     teacher_id = teacher['teacher_id'].unique()
@@ -75,3 +72,15 @@ def count_unique_subjects2(teacher: pd.DataFrame) -> pd.DataFrame:
     return teach
 
 
+# https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/solutions/3851108/pandas-groupby-reset-index-nunique/
+
+def count_unique_subjects2(teacher: pd.DataFrame) -> pd.DataFrame:
+    df = teacher.groupby('teacher_id')['subject_id'].nunique().reset_index()
+    df.columns = ['teacher_id', 'cnt']
+    return df
+
+def count_unique_subjects(teacher: pd.DataFrame) -> pd.DataFrame:
+    return pd.DataFrame({
+        'teacher_id': sorted(teacher['teacher_id'].unique()),
+        'cnt': teacher.groupby('teacher_id')['subject_id'].nunique()
+    })
