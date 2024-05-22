@@ -45,6 +45,8 @@ def isValid2(s: str) -> bool:
         else: return False
     return s==''
 
+
+# https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/solutions/3221953/simple-3-liner-solution-in-python/
 # Runtime 42 ms Beats 77.53% of users with Python3
 # Memory 16.81 MB Beats 30.84% of users with Python3
 def isValid(self, s: str) -> bool:
