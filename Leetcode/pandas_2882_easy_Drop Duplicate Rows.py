@@ -44,6 +44,8 @@ Alic (customer_id = 4) and Finn (customer_id = 5) both use john@example.com, so 
 # Runtime 639 ms Beats 45.14% of users with Pandas
 # Memory 65.76 MB Beats 55.57% of users with Pandas
 
+# https://www.codecamp.ru/blog/pandas-drop-duplicates/
+# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop_duplicates.html
 import pandas as pd
 
 def dropDuplicateEmails(customers: pd.DataFrame) -> pd.DataFrame:
