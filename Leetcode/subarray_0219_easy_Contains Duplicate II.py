@@ -21,12 +21,30 @@ Output: false
 from icecream import ic
 from collections import Counter
 
+
+# Runtime 464 ms Beats 80.42% of users with Python
+# Memory 23.04 MB Beats 35.97% of users with Python
+
+def containsNearbyDuplicate(self, nums, k):
+    """
+    :type nums: List[int]
+    :type k: int
+    :rtype: bool
+    """
+    dd = dict()
+    for i in range(len(nums)):
+        if nums[i] in dd and abs(i - dd[nums[i]]) <= k:
+            return True
+        dd[nums[i]] = i
+    return False
+
+
 # Runtime 498 ms Beats 11.96% of users with Python3
 # Memory 34.49 MB Beats 11.08% of users with Python3
 # Runtime 489 ms Beats 14.49% of users with Python3
 # Memory 34.62 MB Beats 9.37% of users with Python3
 
-def containsNearbyDuplicate(nums, k):
+def containsNearbyDuplicate5(nums, k):
     """
     :type nums: List[int]
     :type k: int
