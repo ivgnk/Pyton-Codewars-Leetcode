@@ -44,7 +44,7 @@ def sortColors(nums):
     for i in range(n0):  nums[i] = 0
     for i in range(n0, n0 + n1):  nums[i] = 1
     for i in range(n0 + n1, n0 + n1 + n2):  nums[i] = 2
-    return a
+    # return a
 
 print(sortColors([2,0,2,1,1,0]))
 print(sortColors([2,0,1]))
