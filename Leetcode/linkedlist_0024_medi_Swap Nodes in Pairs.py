@@ -1,5 +1,6 @@
 """
-24. Swap Nodes in Pairs. Topics: Linked List, Recursion
+Done 12.06.2024. Topics: Linked List
+24. Swap Nodes in Pairs.
 https://leetcode.com/problems/swap-nodes-in-pairs/description/
 Given a linked list, swap every two adjacent nodes and return its head.
 You must solve the problem without modifying the values in the list's nodes
