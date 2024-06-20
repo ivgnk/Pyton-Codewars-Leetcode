@@ -1,5 +1,5 @@
 """
-20.06.2024. Topics: Array, Two Pointers
+Done 20.06.2024. Topics: Array, Two Pointers
 
 2200. Find All K-Distant Indices in an Array
 https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/
