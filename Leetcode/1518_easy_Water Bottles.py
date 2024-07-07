@@ -38,14 +38,23 @@ def numWaterBottles1(numBottles, numExchange):
     """
     return (numBottles * numExchange - 1) / (numExchange - 1)
 
+# Runtime 7 ms Beats 95.45%
+# Memory 11.43 MB Beats 84.09%
 def numWaterBottles(numBottles, numExchange):
     """
     :type numBottles: int
     :type numExchange: int
     :rtype: int
     """
-    return (numBottles * numExchange - 1) / (numExchange - 1)
-
+    ssum = 0
+    empty=10000
+    ost=0
+    while empty >= numExchange:
+        ssum += numBottles - ost
+        ost = numBottles - (numBottles // numExchange * numExchange)
+        empty = numBottles
+        numBottles = empty / numExchange + ost
+    return ssum
 
 # print(numWaterBottles(numBottles = 9, numExchange = 3))
 print(numWaterBottles(numBottles = 15, numExchange = 4))
