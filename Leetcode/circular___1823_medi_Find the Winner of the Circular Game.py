@@ -44,6 +44,8 @@ Explanation: The friends leave in this order: 5, 4, 6, 2, 3. The winner is frien
 
 # Runtime 18 ms Beats 56.38% of users with Python
 # Memory 11.48 MB Beats 98.94% of users with Python
+# Runtime 7 ms Beats 99.21%
+# Memory 11.52 MB Beats 80.16%
 
 # https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/comments/1794562
 def findTheWinner(n, k):
