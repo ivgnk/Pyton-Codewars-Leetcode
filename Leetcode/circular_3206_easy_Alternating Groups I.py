@@ -1,5 +1,5 @@
 """
-08.07.2024. Topics: Array
+Done 08.07.2024. Topics: Array
 
 3206. Alternating Groups I
 https://leetcode.com/problems/alternating-groups-i/description/
