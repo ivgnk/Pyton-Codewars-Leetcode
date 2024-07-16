@@ -60,6 +60,20 @@ Hint 1
 Try to split the array into some non-intersected continuous special subarrays.
 Hint 2
 For each query check that the first and the last elements of that query are in the same subarray or not.
+
+My solution
+https://leetcode.com/problems/special-array-ii/solutions/5484716/not-quite-simple-python-solution/
+Intuition
+Only part of what you need is written in the Нints.
+The most important thing: how to store the resulting boundaries of special subarrays.
+If stored in a list as sublists of separate boundaries, then comparison with an array of queries will lead to a
+TLE error on the last tests. That is, the boundaries should be stored in a simple list.
+Two storage options are possible: indexes that grow as the special subarray grows, or in the form of constant values
+for each such array. In my approach, the second approach was chosen as it is more understandable.
+
+Approach
+Implement the search for boundaries as written in Intuition, and then iterate through the query array: if the values
+in the previously obtained array at the boundary indices are not equal, then the subarray is not special.
 """
 
 # Time Limit Exceeded - 523 / 536 testcases passed
