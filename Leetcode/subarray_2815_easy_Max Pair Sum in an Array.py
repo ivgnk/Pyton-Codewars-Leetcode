@@ -66,8 +66,7 @@ def maxSum2(nums):
 # Time Complexity O(N**2)
 # Memory 16.63 MB Beats 18.38%
 # Space Complexity O(N)
-
-def maxSum(nums):
+def maxSum3(nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -87,6 +86,24 @@ def maxSum(nums):
                         # ic(i,j,nums[i],nums[j],nums[i]+nums[j])
     if ssum==-inf:
         return -1
+    else: return ssum
+
+# on the base of https://leetcode.com/problems/max-pair-sum-in-an-array/solutions/3901792/python3-o-nlog-n-time-o-n-space/
+# Runtime 104 ms Beats 74.86%
+# Memory 16.50 MB Beats 89.46%
+def maxSum(nums):
+    dd=dict()
+    for n in nums:
+        nn=int(max(str(n)))
+        if nn in dd: dd[nn].append(n)
+        else:  dd[nn] = [n]
+    # ic(dd)
+    ssum=-inf
+    for i in dd:
+        if len(dd[i])>1:
+            dd[i].sort()
+            ssum=max(ssum,dd[i][-1]+dd[i][-2])
+    if ssum==-inf: return -1
     else: return ssum
 
 
