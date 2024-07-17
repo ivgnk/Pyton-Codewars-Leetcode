@@ -1,9 +1,9 @@
 # Leetcode             
 💜https://github.com/topics/leetcode      
-💜https://github.com/topics/leetcode-solutions
+💜https://github.com/topics/leetcode-solutions                 
 https://github.com/search?q=Leetcode                            
 
-## Leetcode in Python                    
+## 🌋 Leetcode in Python                    
 https://github.com/topics/leetcode-solutions?l=python
 https://github.com/search?q=Leetcode+language%3APython&type=repositories&l=Python                  
 
