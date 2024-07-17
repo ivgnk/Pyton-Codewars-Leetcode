@@ -2,7 +2,7 @@
 
 https://github.com/search?q=Leetcode
 
-*leetcode cookbook*
+**leetcode cookbook**
 
 https://github.com/gopperin/leetcode/
 
