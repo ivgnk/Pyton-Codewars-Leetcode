@@ -13,8 +13,10 @@ https://github.com/search?q=Leetcode+language%3APython&type=repositories&l=Pytho
 https://github.com/qiyuangong/leetcode - 5.2k stars                 
 https://github.com/Garvit244/Leetcode - 1.4k             
 
-### 🈯 Leetcode in Python (Chinese)                  
-
+### 🈯 Leetcode in Python (Chinese)                               
+https://github.com/itcharge/LeetCode-Py                             
+https://github.com/billryan/algorithm-exercise                  
+https://github.com/HuberTRoy/leetCode                    
 
 ##  🌋 Leetcode in Go             
 **leetcode cookbook (GOlang)** https://github.com/halfrost/LeetCode-Go                         
