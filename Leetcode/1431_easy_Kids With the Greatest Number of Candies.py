@@ -1,4 +1,5 @@
-'''
+"""
+Redone 20.07.2024. Topics: Array
 1431. Kids With the Greatest Number of Candies
 https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/
 
@@ -28,12 +29,14 @@ Kid 1 will always have the greatest number of candies, even if a different kid i
 Example 3:
 Input: candies = [12,1,12], extraCandies = 10
 Output: [true,false,true]
-'''
+"""
 
+# Runtime 27 ms Beats 9.88%
+# Memory 11.66 MB Beats 26.78%
 # Runtime 14 ms Beats 91.76% of users with Python
 # Memory 11.57 MB Beats 78.13% of users with Python
 
-def kidsWithCandies(candies, extraCandies):
+def kidsWithCandies2(candies, extraCandies):
     """
     :type candies: List[int]
     :type extraCandies: int
@@ -43,3 +46,18 @@ def kidsWithCandies(candies, extraCandies):
     for i in range(len(candies)):
         lst.append(candies[i] + extraCandies >= mmax)
     return lst
+
+# Runtime 19 ms Beats 60.90%
+# Memory 11.59 MB Beats 62.20%
+# Runtime 17 ms Beats 76.46%
+# Memory 11.48 MB Beats 90.01%
+# Runtime 15 ms Beats 86.26%
+# Memory 11.82 MB Beats 5.36%
+
+def kidsWithCandies(candies, extraCandies):
+    """
+    :type candies: List[int]
+    :type extraCandies: int
+    :rtype: List[bool]
+    """
+    return [candies[i] + extraCandies >= max(candies) for i in range(len(candies))]
