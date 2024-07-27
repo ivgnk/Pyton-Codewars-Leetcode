@@ -56,16 +56,22 @@ def lastStoneWeight2(stones):
     if ll==1: return stones[0]
     else: return 0
 
+# Runtime 11 ms Beats 87.69%
+# Memory 11.75 MB Beats 16.27%
 import heapq
 def lastStoneWeight(stones):
-    heapq.heapify(stones)
-    ll=len(stones)
+    st=[-s for s in stones]
+    heapq.heapify(st)
+    ll=len(st)
     while ll>1:
-        if ll == 1:
-            return stones[0]
-        else:
-            return 0
+        x=heapq.heappop(st)
+        y=heapq.heappop(st)
+        if y>x:
+            heapq.heappush(st,x - y)
+        ll=len(st)
+    if ll == 1: return -st[0]
+    else: return 0
 
 
-print(lastStoneWeight([2,7,4,1,8,1]))
-print(lastStoneWeight([1]))
+print(lastStoneWeight([2,7,4,1,8,1])) # 1
+print(lastStoneWeight([1])) # 1
