@@ -33,3 +33,11 @@ for s1 in s:
 finish = datetime.datetime.now()
 print('      for s1 in s: ',finish - start)
 
+###---------- 4
+b=0
+start = datetime.datetime.now()
+for i,s1 in enumerate(s):
+    b=s1
+finish = datetime.datetime.now()
+print('for i,s1 in enumerate(s): ',finish - start)
+
