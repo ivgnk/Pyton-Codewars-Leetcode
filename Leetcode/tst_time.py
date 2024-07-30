@@ -6,7 +6,8 @@ import datetime
 import random
 
 n=100000
-s=[0 for i in range(n)]
+s=[0 for i in range(n)]; rn=range(n)
+
 ###---------- 1
 b=0
 start = datetime.datetime.now()
@@ -14,6 +15,14 @@ for i in range(n):
     b=s[i]
 finish = datetime.datetime.now()
 print('for i in range(n): ',finish - start)
+
+###---------- 0
+b=0
+start = datetime.datetime.now()
+for i in rn:
+    b=s[i]
+finish = datetime.datetime.now()
+print('      for i in rn: ',finish - start)
 
 ###---------- 2
 b=0
