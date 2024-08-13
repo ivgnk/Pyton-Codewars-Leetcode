@@ -62,5 +62,26 @@ def isAlienSorted(words, order):
 print(isAlienSorted(words = ["zirqhpfscx","zrmvtxgelh","vokopzrtc","nugfyso","rzdmvyf","vhvqzkfqis","dvbkppw","ttfwryy","dodpbbkp","akycwwcdog"],
 order = "khjzlicrmunogwbpqdetasyfvx"))
 
+
+def isAlienSorted(words, order) -> bool:
+    if len(words) == 1:
+        return True
+
+    order_map = {}
+
+    for index, val in enumerate(order):
+        order_map[val] = index
+
+    for i in range(len(words) - 1):
+        for j in range(len(words[i])):
+            if j >= len(words[i + 1]):
+                return False
+
+            if words[i][j] != words[i + 1][j]:
+                if order_map[words[i][j]] > order_map[words[i + 1][j]]:
+                    return False
+                break
+
+    return True
 # print([3, 5, 7, 16, 1, 15, 23, 21, 6, 25]> [3, 7, 8, 24, 19, 25, 12, 18, 4, 1] )
 
