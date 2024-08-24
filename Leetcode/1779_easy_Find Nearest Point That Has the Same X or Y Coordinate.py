@@ -40,6 +40,8 @@ and keep track of the current point with the smallest Manhattan distance from yo
 
 # Runtime 516 ms Beats 95.24%
 # Memory 17.18 MB Beats 29.52%
+# Time Complexity O(N)
+# Space Complexity O(1)
 
 def nearestValidPoint(x, y, points):
     """
