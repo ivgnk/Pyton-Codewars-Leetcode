@@ -48,7 +48,7 @@ from icecream import ic
 import heapq
 # https://docs-python.ru/standart-library/modul-heapq-python/
 
-
+# https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/solutions/5689775/python-3-8-lines-heap-t-s-49-ms-16-6-mb/
 # Runtime 47 ms Beats 100.00%
 # Memory 11.65 MB Beats 100.00%
 def getFinalState2(nums, k, multiplier):
@@ -71,6 +71,7 @@ def getFinalState2(nums, k, multiplier):
     ic(list(zip(*heap)))
     return list(zip(*heap))[0]
 
+# https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-i/solutions/5689927/easy-problem/
 # Runtime 46 ms Beats 100.00%
 # Memory 11.60 MB Beats 100.00%
 def getFinalState(nums, k, multiplier):
