@@ -119,4 +119,5 @@ class MyStack(object):
         """
         :rtype: bool
         """
-        return self.st.count()==0
+        # return self.st.count()==0 - тоже работает
+        return len(self.st) == 0
