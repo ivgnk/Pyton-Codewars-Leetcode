@@ -70,7 +70,7 @@ def chalkReplacer(chalk, k):
     if k==0: return k
     else:
         i=0
-        while chalk[i]<k:
+        while chalk[i]<=k:
             k=k-chalk[i]
             i=i+1
         return i
