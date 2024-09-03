@@ -35,6 +35,11 @@ Constraints:
 1 <= nums[i] <= 9999
 nums[i] % 10 != 0
 
+Hint 1
+Since nums.length is small, you can find all pairs of indices and check if each pair is beautiful.
+Hint 2
+Use integer to string conversion to get the first and last digit of each number.
+
 Solution
 ✏️ Not a completely simple Python solution with some tricks
 
