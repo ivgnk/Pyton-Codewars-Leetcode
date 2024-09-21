@@ -1,5 +1,6 @@
 """
-766. Toeplitz Matrix. Topics: Array, Matrix
+Done 22.09.2024. Topics: Array, Matrix
+766. Toeplitz Matrix.
 https://leetcode.com/problems/toeplitz-matrix/description/
 
 Given an m x n matrix, return true if the matrix is Toeplitz.
