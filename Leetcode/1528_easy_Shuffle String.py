@@ -56,3 +56,13 @@ def restoreString(s, indices):
 
 ic(restoreString(s = "codeleet", indices = [4,5,6,7,0,2,1,3]))
 # ic(restoreString(s = "aiohn" , indices = [3,1,4,2,0]))
+
+#------ Not work
+def restoreString(s, indices):
+    """
+    :type s: str
+    :type indices: List[int]
+    :rtype: str
+    """
+    s2 = ''.join([s[indices[i]] for i in range(len(s))])
+    return s2
