@@ -1,6 +1,5 @@
 # To do
 medi https://leetcode.com/problems/number-of-good-ways-to-split-a-string/description/                   
-easy https://leetcode.com/problems/path-crossing/description/                      
 https://proglib.io/p/python-i-dinamicheskoe-programmirovanie-na-primere-zadachi-o-ryukzake-2020-02-04                      
 
 
