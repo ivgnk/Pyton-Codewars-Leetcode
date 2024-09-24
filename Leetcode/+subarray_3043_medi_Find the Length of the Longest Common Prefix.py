@@ -75,6 +75,22 @@ def longestCommonPrefix(arr1, arr2):
                 ans = max(ans, len(prefix))  # Update the longest common prefix length
     return ans
 
+# https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/solutions/5827125/easy-solution-python/
+# Runtime 1008 ms Beats 31.97%
+# Memory 28.21 MB Beats 89.66%
+def longestCommonPrefix__(arr1, arr2):
+    arr1Set, res = set(), 0
+    for x in arr1:
+        s = str(x)
+        n = len(s)
+        for i in range(1,n+1): arr1Set.add(s[:i])
+    for x in arr2:
+        s = str(x)
+        n = len(s)
+        for i in range(1,n+1):
+            if s[:i] in arr1Set: res = max(res, i)
+    return res
+
 ic(longestCommonPrefix(arr1=[1, 10, 100], arr2=[1000]))  # 3
 ic(longestCommonPrefix(arr1=[1, 2, 3], arr2=[4, 4, 4]))  # 0
 ic(longestCommonPrefix(arr1=[10], arr2=[17, 11]))  # 1
@@ -186,3 +202,40 @@ def longestCommonPrefix2(arr1, arr2):
     return 0
 # r = sorted(['a', 'ab', 'abc', 'ab1','y'], reverse=True, key=lambda s: len(s))
 # print(r)
+
+# https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/solutions/5827097/python-trie/
+class TrieNode:
+    def __init__(self, val):
+        self.val = val
+        self.next = dict()
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode(val='')
+
+    def add_word(self, word):
+        node = self.root
+        for char in word:
+            if char not in node.next.keys():
+                node.next[char] = TrieNode(char)
+            node = node.next[char]
+
+    def match_word(self, word):
+        ans = 0
+        node = self.root
+        for char in word:
+            if char not in node.next.keys():
+                return ans
+            node = node.next[char]
+            ans += 1
+        return ans
+
+class Solution:
+    def longestCommonPrefix(self, arr1, arr2):
+        ans = 0
+        custom_trie = Trie()
+        for x in arr1:
+            custom_trie.add_word(str(x))
+        for x in arr2:
+            ans = max(ans, custom_trie.match_word(str(x)))
+        return ans
