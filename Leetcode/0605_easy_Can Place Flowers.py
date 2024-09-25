@@ -56,6 +56,8 @@ Additionally consider the case of flowerbed length == 1
 # Memory 17.02 MB Beats 5.18%
 # Runtime 129 ms Beats 73.37%
 # Memory 16.86 MB Beats 72.08%
+# Runtime 128 ms Beats 77.66%
+# Memory 16.97 MB Beats 21.73%
 # Time Complexity O(N)
 # Space Complexity O(N)
 
