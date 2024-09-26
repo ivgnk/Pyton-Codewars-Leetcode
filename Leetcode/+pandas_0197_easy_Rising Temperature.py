@@ -40,6 +40,8 @@ Explanation:
 In 2015-01-02, the temperature was higher than the previous day (10 -> 25).
 In 2015-01-04, the temperature was higher than the previous day (20 -> 30).
 """
+# Runtime 329 ms Beats 98.84%
+# Memory 70.17 MB Beats 88.17%
 
 import pandas as pd
 
