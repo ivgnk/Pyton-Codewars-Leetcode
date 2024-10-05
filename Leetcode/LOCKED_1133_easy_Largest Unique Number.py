@@ -1,5 +1,5 @@
 """
-Done 05.09.2024. Topics: Hash Table, Sorting
+Done 05.10.2024. Topics: Hash Table, Sorting
 1133. Largest Unique Number
 Given an array of integers called nums, we are to find the highest value integer
 that appears exactly once in the array.
