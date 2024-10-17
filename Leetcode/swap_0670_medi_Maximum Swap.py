@@ -32,6 +32,9 @@ If both are true, we can save the index of that max character,
 and have some boolean that will indicate that we've found a valid swap for char at index 'i'.
 https://leetcode.com/problems/maximum-swap/description/comments/2174155
 from https://leetcode.com/u/Cocamo1337/
+
+My solution
+https://leetcode.com/problems/maximum-swap/solutions/5925027/python-solution-for-problem-0670-based-on-tip-in-discussion/
 """
 
 # Time Complexity O(N**2)
