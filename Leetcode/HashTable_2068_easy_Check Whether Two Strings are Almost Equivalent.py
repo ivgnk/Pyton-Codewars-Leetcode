@@ -1,5 +1,5 @@
 """
-22.10.2024. Topics: Hash Table, String
+Done 22.10.2024. Topics: Hash Table, String
 2068. Check Whether Two Strings are Almost Equivalent
 https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/description
 
