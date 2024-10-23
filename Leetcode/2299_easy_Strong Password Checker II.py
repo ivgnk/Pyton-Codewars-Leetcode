@@ -1,5 +1,5 @@
 """
-23.10.2024. Topics: String
+Done 23.10.2024. Topics: String
 2299. Strong Password Checker II.
 https://leetcode.com/problems/strong-password-checker-ii/description
 
