@@ -47,6 +47,12 @@ Hint 2
 Utilize the substring method to extract each version segment delimited by '.'.
 Ensure you're extracting the segments correctly by adjusting the start and end
 indices accordingly.
+
+My solution https://leetcode.com/problems/compare-version-numbers/solutions/6009456/easy-and-fast-0-ms-python-solution-for-problem-0165/
+✏️ Easy and fast (0 ms) Python solution for Problem 0165
+Intuition
+Use standard Python tools: string split, list, list comprehension
+Do not use "Two Pointers" as mentioned in Topics
 """
 
 # Runtime 0 ms Beats 100.00%
