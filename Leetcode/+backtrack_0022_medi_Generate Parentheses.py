@@ -1,5 +1,5 @@
 """
-01.02.2025. Topics: Backtracking, Dynamic Programming
+01.01.2025. Topics: Backtracking, Dynamic Programming
 22. Generate Parentheses
 https://leetcode.com/problems/generate-parentheses/description/
 
